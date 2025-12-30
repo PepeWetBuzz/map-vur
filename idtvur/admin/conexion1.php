@@ -2,11 +2,11 @@
 	
 	echo "<script>console.log('Dentro archivo conexion');</script>";
 
-	//$host        = "host = localhost";144.91.126.153
-	$host        = "host = 144.91.126.153";
-	$port        = "port = 5432";
-	$dbname      = "dbname = geoarenero_00";
-	$credentials = "user = geoadmin password = Overkill23004";
+	//$host        = "host = localhost";
+	$host        = "host = DB_host";
+	$port        = "port = DB_port";
+	$dbname      = "dbname = DB_name";
+	$credentials = "user = DB_Password password = DB_password";
  
 	$conexion = pg_connect( "$host $port $dbname $credentials"  );
 	if(!$conexion) {
