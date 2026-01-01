@@ -83,7 +83,7 @@ function buscarUbicacionFiltro(latitud, longitud, variable_busqueda,centroideGeo
             //---fin extraer-----
         }
             // capa de busqueda de predio
-            resultadoWMSlayer= L.tileLayer.wms('http://144.91.126.153:8990/gs216/opb/wms',
+            resultadoWMSlayer= L.tileLayer.wms('http://IP_WMS:Port/gs216/opb/wms',
             {
                 layers: layer,
                 format: 'image/png',
@@ -95,7 +95,7 @@ function buscarUbicacionFiltro(latitud, longitud, variable_busqueda,centroideGeo
             window.map.addLayer(resultadoWMSlayer);//agregando capa
 
             // capa de busqueda de predio OPACA
-            resultadoWMSlayerOPACA= L.tileLayer.wms('http://144.91.126.153:8990/gs216/opb/wms',
+            resultadoWMSlayerOPACA= L.tileLayer.wms('http://IP_WMS:Port/gs216/opb/wms',
             {
                 layers: layer,
                 format: 'image/png',

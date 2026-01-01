@@ -252,7 +252,7 @@ function loadSelectProyectos() {
 
 loadSelectProyectos();
 
-const wmsUrl = 'http://opb.geoportal.mx:8990/gs216/opb/wms';
+const wmsUrl = 'http://IP_WMS:PORT/gs216/opb/wms';
 const wmsOptions = {
     transparent: true,
     format: 'image/png',
